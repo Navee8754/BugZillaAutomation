@@ -24,7 +24,7 @@ namespace SeliniumWebDriver.TestScript.DropDown
             ButtonHelper.ClickButton(By.Id("log_in"));
             //IWebElement ele = ObjectRepository.Driver.FindElement(By.Id("bug_severity"));
             ComboBoxHelper.SelectElement(By.Id("bug_severity"), "major");
-            ComboBoxHelper.SelectElement(By.Id("bug_severity"), 2);
+            ComboBoxHelper.SelectElement(By.Id("bug_severity"), 3);
             foreach (string str in ComboBoxHelper.GetAllItem(By.Id("bug_severity"))) 
             {
                 Console.WriteLine("Text : {0}",str);
